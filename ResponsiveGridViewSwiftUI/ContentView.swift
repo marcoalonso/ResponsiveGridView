@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var data : [Int] = Array(1...49)
+    private var data : [Int] = Array(1...700)
     private let colors: [Color] = [.red, .gray, .green, .yellow, .blue, .pink, .brown]
     
     //Option 1,
@@ -23,10 +23,16 @@ struct ContentView: View {
         GridItem(.flexible()),
     ]
     
+    //Option 3
+    private let fixedColumns = [
+        GridItem(.fixed(200)),
+        GridItem(.fixed(100)),
+    ]
+    
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: numberOfColumns, spacing: 15) {
+                LazyVGrid(columns: fixedColumns, spacing: 15) {
                     ForEach(data, id: \.self) { number in
                         ZStack {
                             Rectangle()
