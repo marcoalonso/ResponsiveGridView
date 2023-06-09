@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ResponsiveGridView: View {
     private var data : [Int] = Array(1...700)
     private let colors: [Color] = [.red, .gray, .green, .yellow, .blue, .pink, .brown]
     
@@ -56,6 +56,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ResponsiveGridView()
     }
 }
