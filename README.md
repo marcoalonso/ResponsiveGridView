@@ -8,3 +8,8 @@ Adaptive columns with minimum 150
 GridItem .flexible 
 
 <img width="365" alt="image" src="https://github.com/marcoalonso/ResponsiveGridView/assets/49013250/a170e7a5-c4c6-4d2d-8842-164636c0a499">
+
+GridItem .fixed
+
+<img width="1310" alt="image" src="https://github.com/marcoalonso/ResponsiveGridView/assets/49013250/3ce279d0-494c-4a8c-8907-793f28f9548e">
+
