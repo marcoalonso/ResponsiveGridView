@@ -32,6 +32,9 @@ struct ResponsiveGridView: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                NavigationLink("Go to next view") {
+                    NumberDetail()
+                }
                 LazyVGrid(columns: fixedColumns, spacing: 15) {
                     ForEach(data, id: \.self) { number in
                         ZStack {
@@ -44,6 +47,9 @@ struct ResponsiveGridView: View {
                             Text("\(number)")
                                 .font(.system(size: 80, weight: .medium, design: .rounded))
                                 .foregroundColor(.white)
+                        }.onTapGesture {
+                            print("Selected item: \(number)")
+                            
                         }
                     }
                 }
